@@ -1,0 +1,122 @@
+/* styles for the elements */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    border: 3px solid steelblue;
+    box-shadow: 0 10px 20px 10px;
+}
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+a {
+    font-weight: bold;
+}
+
+/* styles for the header */
+header {
+    background-image: -webkit-linear-gradient(to bottom, white 0%, lightsteelblue 100%);
+    background-image: -moz-linear-gradient(to bottom, white 0%, lightsteelblue 100%);
+    background-image: -o-linear-gradient(to bottom, white 0%, lightsteelblue 100%);
+    background-image: linear-gradient(to bottom, white 0%, lightsteelblue 100%);
+    padding: 15px 30px;
+    border-bottom: 2px solid steelblue;
+}
+header img {
+    float: left;
+}
+header h2 {
+    font-size: 250%;
+    font-style: italic;
+    color: steelblue;
+    text-indent: 45px;
+    text-shadow: 3px 3px 3px steelblue;
+    margin-bottom: .3em;
+}
+header h3 {
+    font-size: 150%;
+    text-indent: 45px;
+    padding-bottom: .75em;
+}
+
+/* styles for section */
+section {
+    width: 550px;
+    float: left;
+    padding: 25px 30px;
+}
+section h1 {
+    font-size: 160%; 
+    margin-bottom: .3em;
+}
+section h2 {
+    font-size: 130%;
+    margin-bottom: .5em;
+}
+section h3 {
+    color: maroon;
+    font-size: 110%;
+    margin-bottom: .4em;
+}
+section p {
+    font-size: 100%;
+    margin-bottom: .7em;
+}
+section a:link, section a:visited {
+    color: maroon;
+}
+section a:hover, section a:focus {
+    color: steelblue;
+}
+
+/* styles for the sidebarA */
+#sidebarA {
+    float:left;
+    width: 240px;
+    padding: 25px 0 0 30px;
+}
+#sidebarA h2 {
+    font-size: 130%;
+    margin-bottom: 8px;
+    color: maroon;
+}
+#sidebarA ul {
+    line-height: 1.5;
+    margin: 0;
+}
+#sidebarA a:link, aside a:visited {
+    color: steelblue;
+}
+#sidebarA a:hover, a:focus {
+    color: maroon;
+}
+
+/* styles for sidebarB */
+#sidebarB {
+    float: right;
+    width: 290px;
+    padding: 25px 30px 0 0;
+}
+#sidebarB h2 {
+    font-size: 130%;
+    color: maroon;
+    margin-bottom: .5em;
+}
+#sidebarB h3 {
+    font-size: 110%;
+    margin-bottom: .3em;
+}
+
+/* styles for footer */
+footer {
+    clear: both;
+    padding: 15px 30px;
+    background-color: steelblue;
+}
+footer p {
+    text-align: center;
+    font-size: 85%;
+    color: white;
+}

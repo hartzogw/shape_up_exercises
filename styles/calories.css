@@ -1,0 +1,183 @@
+/* styles for the elements */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 900px;
+    margin: 0 auto;
+    padding: 0;
+    border: 3px solid steelblue;
+    box-shadow: 0 10px 20px 10px;
+}
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover, a:focus {
+    color: maroon;
+}
+
+/* styles for the header */
+header {
+    background-image: -webkit-linear-gradient(to bottom, white 0%, lightsteelblue 100%);
+    background-image: -moz-linear-gradient(to bottom, white 0%, lightsteelblue 100%);
+    background-image: -o-linear-gradient(to bottom, white 0%, lightsteelblue 100%);
+    background-image: linear-gradient(to bottom, white 0%, lightsteelblue 100%);
+    padding: 15px 30px;
+    border-bottom: 2px solid steelblue;
+}
+header img {
+    float: left;
+}
+header h2 {
+    font-size: 250%;
+    font-style: italic;
+    color: steelblue;
+    text-indent: 45px;
+    text-shadow: 3px 3px 3px steelblue;
+    margin-bottom: .3em;
+}
+header h3 {
+    font-size: 150%;
+    text-indent: 45px;
+    padding-bottom: .75em;
+}
+
+/* the styles for the nav element */
+#nav_menu {
+    clear: left;
+    border-bottom: 2px solid steelblue;
+}
+#nav_menu ul {
+    list-style-type: none;
+    position: relative;
+}
+#nav_menu ul li {
+    float: left;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li {
+    float: none;
+}
+#nav_menu ul li:hover > ul {
+    display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+#nav_menu ul {
+    margin: 0;
+    padding: 0;
+}
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    width: 180px;
+    padding: .7em 0;
+    background-color: steelblue;
+    font-weight: bold; 
+    color: white;
+}
+#nav_menu ul li a.current {
+    color: black;
+}
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+    background-color: lightsteelblue;
+}
+
+/* styles for the section */
+section {
+    width: 565px;
+    float: right;
+    padding: 25px 30px;
+}
+section p {
+    font-size: 100%;
+    margin-bottom: .7em;
+}
+
+/* styles for the figure and table */
+figure {
+    margin: 0;
+    padding-bottom: 1em;
+}
+figcaption {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    font-size: 150%;
+    padding-bottom: .25em;
+}
+table {
+    width: 565px;
+    border-spacing: 1em;
+}
+thead {
+    color: maroon;
+}
+th.left, td.left {
+    text-align: left;
+}
+th.right, td.right {
+    text-align: right;
+}
+th, td {
+    padding: .1em;
+}
+th {
+    vertical-align:top;
+}
+
+/* styles for the sidebar */
+aside {
+    float: left;
+    width: 245px;
+    padding: 25px 0 0 30px;
+}
+aside h2 {
+    font-size: 130%;
+    color: maroon;
+    margin-bottom: 8px;
+}
+aside ul {
+    line-height: 1.5;
+    margin: 0;
+    padding-left: 16px
+}
+aside a:link, aside a:visited {
+    color: steelblue;
+}
+aside a:hover, a:focus {
+    color: maroon;
+}
+
+/* styles for footer */
+footer {
+    clear: both;
+    padding: 15px 30px;
+    background-color: steelblue;
+}
+footer p {
+    text-align: center;
+    font-size: 85%;
+    color: white;
+}
+footer div {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 85%;
+}
+footer div a:link, footer div a:visited {
+    color: black;
+}
+footer div a:hover, footer div a:focus {
+    color: white;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Shape Up! | Meal Plan</title>
+	<link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/meals.css">
+</head>
+
+<body>
+    <header>
+       <a href="index.html"><img src="../images/shape_up_logo.png" alt="Shape Up! Logo">
+        </a>
+        <h2>Shape Up!</h2>
+        <h3>Find the best fit for you</h3>
+    </header>
+    
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../strength/index.html">Strength Training</a></li>
+            <li><a href="../cardio/index.html">Cardio Exercises</a></li>
+            <li><a href="../stress/index.html">Stress Relief</a>
+                <ul>
+                   <li><a href="../stress/index.html">What is Stress?</a></li>
+                    <li><a href="../stress/tips.html">5 Helpful Tips</a></li>
+                    <li><a href="../stress/meditate.html">Meditation</a></li>
+                    <li><a href="../stress/vipassana.html">Vipassana</a></li> 
+                </ul>
+            </li>
+            <li><a href="../diet/index.html" class="current">Healthy Diets</a>
+                <ul>
+                   <li><a href="index.html">Why a Healthy Diet?</a></li>
+                    <li><a href="meals.html">Plan Your Meals</a></li>
+                    <li><a href="calories.html">Count Your Calories</a></li>
+                    <li><a href="bmi.html">Calculate Your BMI</a></li> 
+                </ul>
+            </li>
+        </ul>
+    </nav>
+	
+    <main>
+        <section>
+            <h1>Meal Plan order form</h1>
+            <p>
+                Fill out the form as quickly as possible and we will email you a weekly meal plan, customized for you--your lifestyle, your goals, and your personal needs (Asterisks (*) indicate required entries)
+            </p>
+            
+            <form id="meal_request" action="meal_request.html" target="/meal_request.html" method="get">
+                <fieldset>
+                    <legend>Tell us about yourself</legend>
+                    <label for="fullName">* Full name:</label>
+                    <input type="text" id="fullName" autofocus required><br>
+                    <label for="email">* E-Mail:</label>
+                    <input type="email" id="email" required><br>
+                    <label for="gender">Gender: </label>
+                    <select id="gender">
+                        <option value="selectGender">Select a gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <label for="height">Height:</label>
+                    <input type="text" id="height" placeholder="Example: 5ft 6in"><br>
+                    <label for="weight">Weight:</label>
+                    <input type="text" id="weight" placeholder="Example: 145lbs"><br>
+                    <label for="age">Age: </label>
+                    <select id="age">
+                        <option value="selectAge">Select your Age</option>
+                        <option value="less18">18 or under</option>
+                        <option value="eighteento40>18-40">18-40</option>
+                        <option value="fortyoneto64">41-64</option>
+                        <option value="sr">65 or older</option>
+                    </select>   
+                </fieldset>
+                
+                <fieldset class="lifestyle">
+                    <legend>Lifestyle and Goals</legend>
+                    <p>Which currently matches your present lifestyle?</p>
+                    <input type="checkbox" name="active" id="active" value="Active">
+                    <label for="active">Active</label>
+                    <input type="checkbox" name="moderate" id="moderate" value="moderate">
+                    <label for="active">Moderate</label>
+                    <input type="checkbox" name="sedentary" id="sedentary" value="sedentary">
+                    <label for="sedentary">Sedentary</label>
+                    <p>Are you plannig to increase your activity level as you change your diet?</p>
+                    <input type="checkbox" name="yes" id="yes" value="yes">
+                    <label for="yes">Yes</label>
+                    <input type="checkbox" name="no" id="no" value="no">
+                    <label for="no">No</label>
+                    <p>What are your weight goals?</p>
+                    <input type="checkbox" name="gain" id="gain" value="gain">
+                    <label for="gain">Gain weight</label>
+                    <input type="checkbox" name="lose" id="lose" value="lose">
+                    <label for="lose">Lose weight</label>
+                    <input type="checkbox" name="maintain" id="maintain" value="maintain">
+                    <label for="maintain">Maintain current weight</label>
+                </fieldset>
+                
+                <fieldset class="lifestyle">
+                    <legend>Food preferences and restrictions</legend>
+                    <p>Do you have any dietary restrictions?</p>
+                    <input type="checkbox" name="vegetarian" id="vegetarian" value="vegetarian">
+                    <label for="vegtarian">Vegetarian</label>
+                    <input type="checkbox" name="glutenfree" id="glutenfree" value="glutenfree">
+                    <label for="glutenfree">Gluten-free</label>
+                    <input type="checkbox" name="kosher" id="kosher" value="kosher">
+                    <label for="kosher">Kosher</label><br>
+                    <input type="checkbox" name="lowsalt" id="lowsalt" value="lowsalt">
+                    <label for="lowsalt">Low-salt</label>
+                    <input type="checkbox" name="other" id="other" value="other">
+                    <label for="other">Other, please explain.</label><br>
+                    <textarea id="explanation"></textarea>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Comments</legend>
+                    <p>Include any information that will help us develop a custom menu designed to match your lifestyle and goals.</p>
+                    <textarea id="additionalInfo"></textarea>
+                </fieldset>
+                
+                <fieldset class="submission">
+                    <legend>Process your information</legend>
+                    <input type="submit" id="submit" value="Submit now">
+                    <input type="reset" id="reset" value="Start Over">
+                </fieldset>
+            </form>
+        </section>
+        
+	    <aside>
+            <h2>Additional Resources</h2>
+            <ul>
+                <li>
+                    <a href="https://www.cdc.gov/physicalactivity/basics/pa-health/index.htm">Physical activity and health</a>
+                </li>
+                <li>
+                    <a href="https://www.heart.org/en/health-topics/cardiac-rehab/getting-physically-active/stretching-and-flexibility-exercises">Stretching exercises</a>
+                </li>
+                <li>
+                    <a href="https://www.heart.org/HEARTORG/HealthyLiving/PhysicalActivity/FitnessBasics/Strength-and-Resistance-Training-Exercise_UCM_462357_Article.jsp#.WpCPxIPwaUl">Strength training</a>
+                </li>
+                <li>
+                    <a href="https://www.health.harvard.edu/exercise/exercise-and-fitness/interval-training-for-a-stronger-heart">Cardiovascular training</a>
+                </li>
+                <li>
+                    <a href="https://www.self.com/gallery/power-yoga-workout">Yoga workout</a>
+                </li>
+            </ul> 
+        </aside>
+    </main>
+    
+    <footer>
+        <p>&copy; 2019 Shape Up!</p>
+        <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from
+            <a href="www.flaticon.com/" title="Flaticon">www.flaticon.com</a> are licensed by
+            <a href="http://creativecommons.org/license/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+        </div>
+    </footer>
+</body>
+</html>
