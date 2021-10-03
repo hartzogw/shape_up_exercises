@@ -1,15 +1,11 @@
-var $ = function(id) {
-    return document.getElementById(id);
+function calculateBMI(){
+    let feet = parseInt(document.getElementById("feet").value);
+    let inches = parseInt(document.getElementById("inch").value);
+    let weight = parseInt(document.getElementById("weight").value);
+    return 703 * weight / Math.pow((feet * 12) + inches, 2);
 }
-var calculateBMI = function() {
-    var feet = parseInt($("feet").value);
-    var inches = parseInt($("inch").value);
-    var weight = parseInt($("weight").value);
-    var height = (feet * 12 + inches);
-    var height_squared = Math.pow(height, 2);
-    var bmi = (weight / height_squared) * 703;
-    $("bmi_result").value = bmi.toFixed(2);             
-}
-window.onload = function() {
-    $("calculate").onclick = calculateBMI;
+
+function setOutput(){
+    let bmi = calculateBMI();
+    document.getElementById("output").innerText = bmi;
 }
